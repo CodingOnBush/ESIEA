@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/rowFilmColor"
+    app:cardCornerRadius="10dp"
+    android:outlineSpotShadowColor="@color/colorPrimary"
+    android:outlineAmbientShadowColor="@color/colorPrimary"
+    tools:targetApi="p">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/filmPoster"
+            android:layout_width="350dp"
+            android:layout_height="500dp"
+            android:contentDescription="@string/film_poster" />
+
+        <TextView
+            android:id="@+id/filmTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:text="@string/film_title_text"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textColor="@color/rowFilmColor"
+            android:textSize="25sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
